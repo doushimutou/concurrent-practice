@@ -6,18 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
         <module name="practice-api" />
         <module name="practice-impl" />
         <module name="practice-mapper" />
         <module name="practice-server" />
+        <module name="practice-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="concurrent-practice" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="practice" target="1.8" />
       <module name="practice-api" target="1.8" />
       <module name="practice-impl" target="1.8" />
       <module name="practice-mapper" target="1.8" />
       <module name="practice-server" target="1.8" />
+      <module name="practice-test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

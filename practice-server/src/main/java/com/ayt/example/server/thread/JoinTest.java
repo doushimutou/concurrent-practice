@@ -3,6 +3,7 @@ package com.ayt.example.server.thread;
 /**
  * Description
  * Author ayt  on
+ *等待线程执行终止后才往下进行
  */
 public class JoinTest {
 	public static void main(String[] args) throws InterruptedException {
@@ -19,7 +20,7 @@ public class JoinTest {
 		Thread threadTwo = new Thread(() -> {
 
 			try {
-				Thread.sleep(5000);
+				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -30,5 +31,6 @@ public class JoinTest {
 		System.out.println("wait all child thread over");
 		threadOne.join();
 		threadTwo.join();
+		System.out.println("全部结束");
 	}
 }

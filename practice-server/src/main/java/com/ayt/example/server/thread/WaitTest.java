@@ -51,7 +51,5 @@ public class WaitTest {
 
 		threadA.join();
 		threadB.join();
-
-
 	}
 }

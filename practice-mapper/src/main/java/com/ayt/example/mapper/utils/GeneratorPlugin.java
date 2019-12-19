@@ -22,7 +22,7 @@ public class GeneratorPlugin {
             boolean overwrite = true;
             // 读取配置,构造 Configuration 对象.
             // 如果不想使用配置文件的话,也可以直接来 new Configuration(),然后给相应属性赋值.
-            File configFile = new File("D:\\learn\\webui-service\\webui-mapper\\src\\main\\resources\\generator\\generatorConfig.xml");
+            File configFile = new File("E:\\dwd-test\\concurrent-practice\\practice-mapper\\src\\main\\resources\\generator\\generatorConfig.xml");
             ConfigurationParser cp = new ConfigurationParser(warnings);
             Configuration config = cp.parseConfiguration(configFile);
             DefaultShellCallback callback = new DefaultShellCallback(overwrite);
